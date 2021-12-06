@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF34F7D8-2FCE-4D94-8DAC-DDFEAF44FCFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatSanPham.Designer.cs">
+      <DependentUpon>CapNhatSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangxuat.Designer.cs">
+      <DependentUpon>Dangxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DauGiaCuaToi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DauGiaCuaToi.Designer.cs">
+      <DependentUpon>DauGiaCuaToi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoGiaDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoGiaDung.Designer.cs">
+      <DependentUpon>DoGiaDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayDep.Designer.cs">
+      <DependentUpon>GiayDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GioHangCuaToi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GioHangCuaToi.Designer.cs">
+      <DependentUpon>GioHangCuaToi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiemDuyetVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiemDuyetVien.Designer.cs">
+      <DependentUpon>KiemDuyetVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSu.Designer.cs">
+      <DependentUpon>LichSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyDauGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyDauGia.Designer.cs">
+      <DependentUpon>QuanLyDauGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHangHoa.Designer.cs">
+      <DependentUpon>QuanLyHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKDV.Designer.cs">
+      <DependentUpon>QuanLyKDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThamGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThamGia.Designer.cs">
+      <DependentUpon>ThamGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinCaNhan.Designer.cs">
+      <DependentUpon>ThongTinCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrangChuTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChuTuVan.Designer.cs">
+      <DependentUpon>TrangChuTuVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuVan.Designer.cs">
+      <DependentUpon>TuVan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatSanPham.resx">
+      <DependentUpon>CapNhatSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DauGiaCuaToi.resx">
+      <DependentUpon>DauGiaCuaToi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoGiaDung.resx">
+      <DependentUpon>DoGiaDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayDep.resx">
+      <DependentUpon>GiayDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GioHangCuaToi.resx">
+      <DependentUpon>GioHangCuaToi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiemDuyetVien.resx">
+      <DependentUpon>KiemDuyetVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichSu.resx">
+      <DependentUpon>LichSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDauGia.resx">
+      <DependentUpon>QuanLyDauGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHangHoa.resx">
+      <DependentUpon>QuanLyHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKDV.resx">
+      <DependentUpon>QuanLyKDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThamGia.resx">
+      <DependentUpon>ThamGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinCaNhan.resx">
+      <DependentUpon>ThongTinCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TrangChuTuVan.resx">
+      <DependentUpon>TrangChuTuVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TuVan.resx">
+      <DependentUpon>TuVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23131.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapASDASDASDture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaptuAAAre.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaptureAA.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaptAAAure.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaptureAA-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaptSADADure.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-shopping-cart-clip-art-5ae4e4a611d292.380342161524950182073.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captaare.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caaaapture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaaa.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captuaaaaaaare.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capturaaaaae.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAAACapture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\916797.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sadadasdasdasdas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PC-Acer-Aspire-TC-865.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captuqwqwre.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captuaaaare.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capturaaae.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fhfh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2811%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2812%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2813%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2814%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2815%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1312313.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
