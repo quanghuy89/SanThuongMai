@@ -487,7 +487,7 @@ namespace WindowsFormsApp3
             this.trởVềToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
-            this.menuStrip1.Location = new System.Drawing.Point(1, 156);
+            this.menuStrip1.Location = new System.Drawing.Point(1, 172);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(184, 247);
             this.menuStrip1.TabIndex = 577;
@@ -605,7 +605,7 @@ namespace WindowsFormsApp3
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 89);
+            this.label1.Location = new System.Drawing.Point(30, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 18);
             this.label1.TabIndex = 574;
@@ -979,7 +979,7 @@ namespace WindowsFormsApp3
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp3.Properties.Resources._1312313;
-            this.pictureBox2.Location = new System.Drawing.Point(37, -4);
+            this.pictureBox2.Location = new System.Drawing.Point(47, 9);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(94, 78);
@@ -990,9 +990,9 @@ namespace WindowsFormsApp3
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(1, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 522);
+            this.pictureBox1.Size = new System.Drawing.Size(204, 522);
             this.pictureBox1.TabIndex = 572;
             this.pictureBox1.TabStop = false;
             // 
@@ -1032,7 +1032,7 @@ namespace WindowsFormsApp3
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(1306, 468);
+            this.ClientSize = new System.Drawing.Size(1306, 524);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip4);
             this.Controls.Add(this.menuStrip2);
